@@ -57,13 +57,13 @@ void init(struct DATA* d) {
 	d->state = d->PLAY;
 }
 void play(struct DATA* d) {
-	if (!isTrigger(KEY_A) && !isTrigger(KEY_S) && !isTrigger(KEY_D)) {
+	if (!isTrigger(KEY_Q) && !isTrigger(KEY_W) && !isTrigger(KEY_E)) {
 		return;
 	}
 	//ƒvƒŒƒCƒ„[‚Ìè
-	if (isTrigger(KEY_A)) { d->player.hand = d->GU; }
-	if (isTrigger(KEY_S)) { d->player.hand = d->CHOKI; }
-	if (isTrigger(KEY_D)) { d->player.hand = d->PA; }
+	if (isTrigger(KEY_Q)) { d->player.hand = d->GU; }
+	if (isTrigger(KEY_W)) { d->player.hand = d->CHOKI; }
+	if (isTrigger(KEY_E)) { d->player.hand = d->PA; }
 	//PC‚Ìè
 	d->pc.hand = random() % 3;
 	//Ÿ‚¿•‰‚¯”»’è
